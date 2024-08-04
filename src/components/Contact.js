@@ -1,7 +1,7 @@
 // client/components/Contact.js
 import { useState } from 'react';
 import axios from 'axios';
-
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +24,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`https://portafolio-front-pq6f7th0v-pedros-projects-ba5e240c.vercel.app/api/contact`, formData);
+      console.log("APIURL", apiUrl)
+      const response = await axios.post(`${apiUrl}/api/contact`, formData);
       console.log(response.data);
       // Reset form and error message
       setFormData({
