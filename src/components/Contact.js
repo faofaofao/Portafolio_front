@@ -23,10 +23,11 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
-      console.log("APIURL", apiUrl)
       const response = await axios.post(`${apiUrl}/api/contact`, formData);
       console.log(response.data);
+
       // Reset form and error message
       setFormData({
         name: '',
@@ -36,8 +37,9 @@ const Contact = () => {
       });
       setErrorMessage('');
     } catch (error) {
+     
       console.error('Error al enviar el formulario:', error);
-      setErrorMessage('El correo no existe');
+      setErrorMessage('Error en el envío del formulario');
     }
   };
 
