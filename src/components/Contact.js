@@ -1,7 +1,6 @@
 // client/components/Contact.js
 import { useState } from 'react';
 import axios from 'axios';
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +24,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${apiUrl}/api/contact`, formData);
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, formData);
       console.log(response.data);
 
       // Reset form and error message
