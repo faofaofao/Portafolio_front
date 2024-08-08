@@ -3,8 +3,8 @@ import { useState } from 'react';
 import axios from 'axios';
 const UrlApi = process.env.BACK_API_URL
 
-require('dotenv').config();
-console.log(`: url backend2 : ${UrlApi}`)
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,9 +26,9 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-console.log(`: url backend : ${process.env.BACK_API_URL}`)
+
     try {
-      const response = await axios.post(`${process.env.BACK_API_URL}/api/contact`, formData);
+      const response = await axios.post(`https://portafolio-back-p2nb.onrender.com/api/contact`, formData);
       console.log(response.data);
 
       // Reset form and error message
