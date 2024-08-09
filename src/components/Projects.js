@@ -44,7 +44,7 @@ const Projects = () => (
             </div>
           
           </div>
-          {/* Repite estas cartas según sea necesario */}
+       
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 const About = () => (
-  <section id="about" className="py-10 bg-gray-100" data-aos="fade-up"> {/* Cambié py-20 a py-10 */}
+  <section id="about" className="py-10 bg-gray-100" data-aos="fade-up"> 
     <div className="container mx-auto px-6">
       <h2 className="text-3xl font-semibold text-center mb-6">Sobre mí</h2>
       <div className="flex flex-col md:flex-row items-center">

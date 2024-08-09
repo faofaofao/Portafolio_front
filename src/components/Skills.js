@@ -15,7 +15,7 @@ const skills = [
 ];
 
 const Skills = () => (
-  <section id="skills" className="py-10 bg-gray-100" data-aos="fade-up"> {/* Cambié py-20 a py-10 */}
+  <section id="skills" className="py-10 bg-gray-100" data-aos="fade-up"> 
     <div className="container mx-auto px-6">
       <h2 className="text-3xl font-semibold text-center mb-6">Habilidades</h2>
       <div className="flex flex-wrap justify-center space-x-4">

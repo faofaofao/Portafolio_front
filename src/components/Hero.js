@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0">
           <img
-            src="/images/herojs_icon.png" // Reemplaza con la ruta a tu imagen
+            src="/images/herojs_icon.png" 
             alt="Hero Image"
             className="rounded-lg shadow-lg"
           />
