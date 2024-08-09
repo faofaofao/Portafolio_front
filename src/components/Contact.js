@@ -28,7 +28,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${UrlApi}`, formData);
+      const response = await axios.post(`${UrlApi}/api/contact`, formData);
       console.log(response.data);
 
       // Reset form and error message
