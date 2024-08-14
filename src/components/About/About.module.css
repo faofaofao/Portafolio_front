@@ -1,0 +1,12 @@
+/* About.module.css */
+
+.expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .expandable-content.expanded {
+    max-height: 500px; /* Ajusta este valor según la cantidad de contenido */
+  }
+  

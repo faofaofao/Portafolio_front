@@ -1,6 +1,6 @@
-// client/components/Contact.js
 import { useState } from 'react';
 import axios from 'axios';
+
 const UrlApi = process.env.BACK_API_URL;
 
 const Contact = () => {
@@ -12,6 +12,7 @@ const Contact = () => {
   });
 
   const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState(''); // Estado para el mensaje de éxito
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,10 +26,10 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`https://portafolio-back-p2nb.onrender.com/api/contact`, formData);
+      const response = await axios.post('https://portafolio-back-p2nb.onrender.com/api/contact', formData);
       console.log(response.data);
 
-      // Reset form and error message
+      // Reset form and messages
       setFormData({
         name: '',
         email: '',
@@ -36,9 +37,11 @@ const Contact = () => {
         message: ''
       });
       setErrorMessage('');
+      setSuccessMessage('Mensaje enviado con éxito'); // Mensaje de éxito
     } catch (error) {
       console.error('Error al enviar el formulario:', error);
       setErrorMessage('Error en el envío del formulario');
+      setSuccessMessage(''); // Limpia el mensaje de éxito en caso de error
     }
   };
 
@@ -102,6 +105,7 @@ const Contact = () => {
               Enviar
             </button>
           </div>
+          {successMessage && <p className="text-green-600 mt-4 text-center">{successMessage}</p>} {/* Mensaje de éxito */}
           {errorMessage && <p className="text-red-600 mt-4 text-center">{errorMessage}</p>}
         </form>
       </div>

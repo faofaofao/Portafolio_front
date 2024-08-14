@@ -1,0 +1,16 @@
+/* src/components/Hero/Hero.module.css */
+@keyframes cursor-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .animateCursor {
+    animation: cursor-blink 1s infinite;
+  }
+  
+  /* Otros estilos específicos del componente Hero */
+  /* src/components/About/About.module.css */
+.expand-text {
+  transition: max-height 0.5s ease-out;
+}
