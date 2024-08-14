@@ -74,7 +74,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0">
-          <Image
+          <img
             src="/images/herojs_icon.png"
             alt="Hero Image"
             className="rounded-lg shadow-lg border-4 border-[#00bfae] w-full max-w-lg mx-auto"

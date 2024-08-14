@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './About.module.css'; // Asegúrate de importar el archivo CSS
 
 const About = () => {
   const [expanded, setExpanded] = useState(false);
@@ -19,7 +20,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           {/* Imagen a la izquierda en pantallas grandes */}
           <div className="md:w-1/2 flex justify-center md:justify-start" data-aos="fade-right">
-            <Image
+            <img
               src="/images/aboutjs_icon.png"
               alt="Sobre mí"
               className="rounded-lg shadow-lg bg-white p-4 max-w-xs md:max-w-md lg:max-w-lg transform transition-transform duration-300 hover:scale-105"
@@ -36,13 +37,15 @@ const About = () => {
             <p className="text-[#F1F1F1] leading-relaxed mb-4 text-lg md:text-xl" data-aos="fade-up" data-aos-delay="400">
               Mi objetivo es seguir aprendiendo y creciendo profesionalmente mientras colaboro en proyectos de equipo y gestiono iniciativas independientes...
             </p>
-            {expanded && (
-              <div data-aos="fade-up" data-aos-delay="600">
-                <p className="text-[#F1F1F1] leading-relaxed mb-4 text-lg md:text-xl">
-                  Este es el contenido adicional que se muestra al hacer clic en "Ver más". Aquí puedes agregar más información sobre ti, tus proyectos, o cualquier otro detalle que quieras compartir.
-                </p>
-              </div>
-            )}
+            <div
+              className={`expandable-content ${expanded ? 'expanded' : ''}`}
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <p className="text-[#F1F1F1] leading-relaxed mb-4 text-lg md:text-xl">
+                Este es el contenido adicional que se muestra al hacer clic en "Ver más". Aquí puedes agregar más información sobre ti, tus proyectos, o cualquier otro detalle que quieras compartir.
+              </p>
+            </div>
           </div>
         </div>
         {/* Contenedor para el botón */}

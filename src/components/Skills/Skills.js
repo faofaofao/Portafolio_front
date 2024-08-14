@@ -35,7 +35,7 @@ const Skills = () => {
               data-aos="fade-up"
               data-aos-delay={`${index * 50}`} // Reducido el retraso a 50ms para una aparición más rápida
             >
-              <Image
+              <img
                 src={skill.src}
                 alt={skill.alt}
                 className="h-24 w-24 object-contain"
