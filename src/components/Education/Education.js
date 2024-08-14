@@ -38,7 +38,7 @@ const Education = () => {
               data-aos-delay={`${index * 200}`}
             >
               <div className="flex-grow">
-                <img
+                <Image
                   src={item.src}
                   alt={item.title}
                   className="h-48 w-full object-cover mb-6 rounded-md"

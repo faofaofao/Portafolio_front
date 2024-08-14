@@ -19,7 +19,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           {/* Imagen a la izquierda en pantallas grandes */}
           <div className="md:w-1/2 flex justify-center md:justify-start" data-aos="fade-right">
-            <img
+            <Image
               src="/images/aboutjs_icon.png"
               alt="Sobre mí"
               className="rounded-lg shadow-lg bg-white p-4 max-w-xs md:max-w-md lg:max-w-lg transform transition-transform duration-300 hover:scale-105"

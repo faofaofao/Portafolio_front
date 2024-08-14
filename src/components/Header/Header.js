@@ -8,7 +8,7 @@ const Header = () => (
         >
           Mi Portafolio
         </a>
-        <img
+        <Image
           src="/images/logo.png" // Reemplaza con la ruta de tu imagen
           alt="Logo"
           className="w-8 h-8 md:w-10 md:h-10" // Aumenta el tamaño del logo en pantallas más grandes

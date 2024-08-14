@@ -43,7 +43,7 @@ const Projects = () => (
             key={index}
             className="bg-[#8D99AE] p-6 rounded-2xl border border-[#2B2D42] border-opacity-20 shadow-md flex flex-col items-center"
           >
-            <img
+            <Image
               src={project.src}
               alt={project.title}
               className="h-60 w-full object-cover mb-4 rounded-lg"

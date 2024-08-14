@@ -25,7 +25,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="transition-transform transform hover:scale-110 border border-gray-700 p-1 rounded-full"
         >
-          <img
+          <Image
             src="/images/instagram_icon.png"
             alt="Instagram"
             className="h-8 w-8"
@@ -37,7 +37,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="transition-transform transform hover:scale-110 border border-gray-700 p-1 rounded-full"
         >
-          <img
+          <Image
             src="/images/linkedin_icon.png"
             alt="LinkedIn"
             className="h-8 w-8"
@@ -49,7 +49,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="transition-transform transform hover:scale-110 border border-gray-700 p-1 rounded-full"
         >
-          <img
+          <Image
             src="/images/github_icon.png"
             alt="GitHub"
             className="h-8 w-8"
