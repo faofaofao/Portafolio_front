@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import axios from 'axios';
-
 const UrlApi = process.env.BACK_API_URL;
 
 const Contact = () => {
@@ -12,7 +11,7 @@ const Contact = () => {
   });
 
   const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState(''); // Estado para el mensaje de éxito
+  const [successMessage, setSuccessMessage] = useState(''); // Nuevo estado para el mensaje de éxito
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://portafolio-back-p2nb.onrender.com/api/contact', formData);
+      const response = await axios.post(`https://portafolio-back-p2nb.onrender.com/api/contact`, formData);
       console.log(response.data);
 
       // Reset form and messages
@@ -105,7 +104,7 @@ const Contact = () => {
               Enviar
             </button>
           </div>
-          {successMessage && <p className="text-green-600 mt-4 text-center">{successMessage}</p>} {/* Mensaje de éxito */}
+          {successMessage && <p className="text-green-600 mt-4 text-center">{successMessage}</p>}
           {errorMessage && <p className="text-red-600 mt-4 text-center">{errorMessage}</p>}
         </form>
       </div>
