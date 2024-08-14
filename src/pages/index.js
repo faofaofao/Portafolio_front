@@ -1,12 +1,12 @@
-import About from "@/components/About";
-import Education from "@/components/Education";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
+import About from "@/components/About/About";
+import Education from "@/components/Education/Education";
+import Header from "@/components/Header/Header";
+import Hero from "@/components/Hero/Hero";
+import Projects from "@/components/Prjects/Projects";
+import Skills from "@/components/Skills/Skills";
 import Head from "next/head";
-import Contact from "@/components/Contact"; 
-import Footer from "@/components/Footer"; 
+import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 const Home = () => (
   <div>
