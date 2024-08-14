@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,9 +14,11 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           {/* Imagen a la izquierda en pantallas grandes */}
           <div className="md:w-1/2 flex justify-center md:justify-start" data-aos="fade-right">
-            <img
+            <Image
               src="/images/aboutjs_icon.png"
               alt="Sobre mí"
+              width={400} // Ajusta el ancho según el tamaño real de la imagen
+              height={300} // Ajusta la altura según el tamaño real de la imagen
               className="rounded-lg shadow-lg bg-white p-4 max-w-xs md:max-w-md lg:max-w-lg transform transition-transform duration-300 hover:scale-105"
             />
           </div>
