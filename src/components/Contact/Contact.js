@@ -25,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(https://portafolio-back-p2nb.onrender.com/api/contact, formData);
+      const response = await axios.post("https://portafolio-back-p2nb.onrender.com/api/contact", formData);
       console.log(response.data);
 
       // Reset form and error message
