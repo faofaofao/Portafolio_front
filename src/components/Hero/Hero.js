@@ -55,7 +55,7 @@ const Hero = () => {
             <TypewriterEffect text="Pedro Cuevas Lavin" />
           </h1>
           <p className="text-xl mb-6">
-            Desarrollador web Full-Stack con experiencia en crear aplicaciones completas. Trabajo en el diseño de interfaces y en el desarrollo de funcionalidades tanto en el front-end como en el back-end, buscando siempre ofrecer soluciones efectivas.
+Desarrollador web Full-Stack con experiencia en crear demos funcionales que abarcan tanto el front-end como el back-end. Me enfoco en el diseño de interfaces y en el desarrollo de funcionalidades, siempre buscando ofrecer soluciones efectivas.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <a

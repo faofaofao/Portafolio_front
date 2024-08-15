@@ -28,7 +28,7 @@ const About = () => {
               Desde que empecé con el desarrollo web, me atrajo la capacidad de transformar ideas en aplicaciones funcionales a través del código. He adquirido experiencia práctica a lo largo de proyectos realizados durante mi formación, lo cual me ha permitido desarrollar soluciones digitales efectivas.
             </p>
             <p className="text-[#F1F1F1] leading-relaxed mb-4 text-lg md:text-xl" data-aos="fade-up" data-aos-delay="200">
-              A menudo, los problemas en programación se presentan en la lógica, y me enfoco en entender cómo resolver estos desafíos para comunicarme eficazmente con las máquinas. Disfruto escribir código y enfrentar los retos técnicos, especialmente en el backend, donde trabajo en la estructura y funcionalidad de las aplicaciones.
+              A menudo, los problemas en programación se presentan en la lógica, y me enfoco en entender cómo resolver estos desafíos para comunicarme eficazmente con las tecnologías. Disfruto escribir código y enfrentar los retos técnicos, especialmente en el backend, donde trabajo en la estructura y funcionalidad de las aplicaciones.
             </p>
             <p className="text-[#F1F1F1] leading-relaxed mb-4 text-lg md:text-xl" data-aos="fade-up" data-aos-delay="400">
               Mi objetivo es seguir aprendiendo y creciendo profesionalmente mientras colaboro en proyectos de equipo y gestiono iniciativas independientes. Estoy comprometido a aplicar mis habilidades en proyectos que tengan un impacto real y a seguir enfrentando desafíos técnicos en mi carrera.
