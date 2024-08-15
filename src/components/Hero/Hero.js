@@ -73,11 +73,11 @@ Desarrollador web Full-Stack con experiencia en crear demos funcionales que abar
             </a>
           </div>
         </div>
-        <div className="md:w-1/2 mt-6 md:mt-0">
+        <div className="md:w-1/3 mt-6 md:mt-0">
           <img
             src="/images/herojs_icon.png"
             alt="Hero Image"
-            className="rounded-lg shadow-lg border-4 border-[#00bfae] w-full max-w-lg mx-auto"
+            className="w-full max-w-lg mx-auto"
           />
         </div>
       </div>

@@ -20,26 +20,30 @@ const skills = [
 
 const Skills = () => {
   useEffect(() => {
-    AOS.init({ duration: 600 }); // Reducido a 600ms para una aparición más rápida
+    AOS.init({ duration: 600 });
   }, []);
 
   return (
-    <section id="skills" className="py-20 bg-[#EDF2F4]" data-aos="fade-up">
+    <section id="skills" className="py-20 bg-[#2B2D42]" data-aos="fade-up">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-semibold text-center mb-12 text-[#2B2D42]">Habilidades</h2>
+        <h2 className="text-3xl font-semibold text-center mb-12 text-[#EDF2F4]">Habilidades</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="h-36 w-36 bg-[#8D99AE] rounded-full flex items-center justify-center shadow-lg transition-transform transform hover:scale-105"
+              className="relative h-36 w-36 bg-gradient-to-b from-[#8D99AE] to-[#4A5568] rounded-full flex items-center justify-center shadow-lg transition-transform transform hover:scale-110 overflow-hidden group"
               data-aos="fade-up"
-              data-aos-delay={`${index * 50}`} // Reducido el retraso a 50ms para una aparición más rápida
+              data-aos-delay={`${index * 50}`}
             >
               <img
                 src={skill.src}
                 alt={skill.alt}
-                className="h-24 w-24 object-contain"
+                className="h-28 w-28 object-contain transition-opacity duration-300"
               />
+              <div className="absolute inset-0 flex items-center justify-center bg-[#2B2D42] text-[#EDF2F4] text-center py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {skill.alt}
+              </div>
+              <div className="absolute inset-0 border-4 border-transparent group-hover:border-[#EDF2F4] rounded-full pointer-events-none transition-all duration-300"></div>
             </div>
           ))}
         </div>

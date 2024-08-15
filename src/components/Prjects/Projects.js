@@ -32,30 +32,30 @@ const projects = [
 ];
 
 const Projects = () => (
-  <section id="projects" className="py-20 bg-[#EDF2F4]">
+  <section id="projects" className="py-20 bg-[#E0F7FA]"> {/* Fondo del componente celeste */}
     <div className="container mx-auto px-6">
-      <h2 className="text-3xl font-semibold text-center mb-12 text-[#2B2D42]">
+      <h2 className="text-3xl font-semibold text-center mb-12 text-[#333333]">
         Proyectos
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#8D99AE] p-6 rounded-2xl border border-[#2B2D42] border-opacity-20 shadow-md flex flex-col items-center"
+            className="bg-[#FFFFFF] p-6 rounded-2xl border border-[#E0E0E0] shadow-md flex flex-col items-center"
           >
             <img
               src={project.src}
               alt={project.title}
               className="h-60 w-full object-cover mb-4 rounded-lg"
             />
-            <h3 className="text-xl font-bold mb-2 text-[#2B2D42] text-center">{project.title}</h3>
-            <p className="text-[#EDF2F4] mb-4 text-center">{project.description}</p>
+            <h3 className="text-xl font-bold mb-2 text-[#333333] text-center">{project.title}</h3>
+            <p className="text-[#666666] mb-4 text-center">{project.description}</p>
             <div className="flex justify-center gap-4 w-full">
               <a
                 href={project.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
               >
                 DEMO
               </a>
@@ -63,7 +63,7 @@ const Projects = () => (
                 href={project.repoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-900"
+                className="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-800"
               >
                 REPO
               </a>

@@ -8,9 +8,9 @@ const Education = () => {
   }, []);
 
   return (
-    <section id="education" className="py-20 bg-[#EDF2F4]">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-semibold text-center mb-12 text-[#2B2D42]" data-aos="zoom-in">
+    <section id="education" className="py-20 bg-[#1e2a38] text-[#FFFFFF]">
+      <div className="container mx-auto px-6 relative z-10">
+        <h2 className="text-3xl font-semibold text-center mb-12 text-[#FFFFFF]" data-aos="zoom-in">
           Formación
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -33,7 +33,7 @@ const Education = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-[#8D99AE] p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 min-h-[350px] flex flex-col"
+              className="bg-gradient-to-b from-[#004c7f] to-[#003057] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 min-h-[350px] flex flex-col"
               data-aos="fade-up"
               data-aos-delay={`${index * 200}`}
             >
@@ -41,10 +41,10 @@ const Education = () => {
                 <img
                   src={item.src}
                   alt={item.title}
-                  className="h-48 w-full object-cover mb-6 rounded-md"
+                  className="h-48 w-full object-cover mb-6 rounded-md border-4 border-[#007f7f]"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-[#2B2D42]">{item.title}</h3>
+              <h3 className="text-xl font-bold mb-2 text-[#FFFFFF]">{item.title}</h3>
               <p className="text-[#EDF2F4]">{item.date}</p>
             </div>
           ))}
