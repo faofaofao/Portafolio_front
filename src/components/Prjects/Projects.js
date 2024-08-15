@@ -32,30 +32,34 @@ const projects = [
 ];
 
 const Projects = () => (
-  <section id="projects" className="py-20 bg-[#E0F7FA]"> {/* Fondo del componente celeste */}
+  <section id="projects" className="py-20 bg-[#453A30]"> {/* Fondo del componente con tonalidad de #2B2118 */}
     <div className="container mx-auto px-6">
-      <h2 className="text-3xl font-semibold text-center mb-12 text-[#333333]">
+      <h2 className="text-3xl font-semibold text-center mb-12 text-[#F4EDE8]"> {/* Texto con tonalidad clara de #2B2118 */}
         Proyectos
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#FFFFFF] p-6 rounded-2xl border border-[#E0E0E0] shadow-md flex flex-col items-center"
+            className="bg-[#2B2118] p-6 rounded-2xl border border-[#5A483D] shadow-md flex flex-col items-center" /* Fondo oscuro, bordes y sombras más claras */
           >
             <img
               src={project.src}
               alt={project.title}
-              className="h-60 w-full object-cover mb-4 rounded-lg"
+              className="h-60 w-full object-cover mb-4 rounded-lg border-2 border-[#7C6654]" /* Borde de la imagen */
             />
-            <h3 className="text-xl font-bold mb-2 text-[#333333] text-center">{project.title}</h3>
-            <p className="text-[#666666] mb-4 text-center">{project.description}</p>
+            <h3 className="text-xl font-bold mb-2 text-[#F4EDE8] text-center"> {/* Título del proyecto con color claro */}
+              {project.title}
+            </h3>
+            <p className="text-[#D3C6B5] mb-4 text-center"> {/* Descripción con color más claro */}
+              {project.description}
+            </p>
             <div className="flex justify-center gap-4 w-full">
               <a
                 href={project.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+                className="bg-[#6E5542] text-[#F4EDE8] px-4 py-2 rounded-md hover:bg-[#7C6654]" /* Botón DEMO con tonalidades de #2B2118 */
               >
                 DEMO
               </a>
@@ -63,7 +67,7 @@ const Projects = () => (
                 href={project.repoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-800"
+                className="bg-[#4A3A31] text-[#F4EDE8] px-4 py-2 rounded-md hover:bg-[#5A483D]" /* Botón REPO con tonalidades más oscuras */
               >
                 REPO
               </a>

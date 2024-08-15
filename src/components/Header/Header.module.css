@@ -1,0 +1,43 @@
+/* Header.module.css */
+.header {
+    background-color: rgba(43, 45, 66, 0.8); /* Color de fondo con transparencia suave */
+    color: #EDF2F4;
+    padding: 1.5rem; /* Equivalent to p-6 in Tailwind */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+    box-shadow: none; /* Quitar la sombra para mantener la transparencia */
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .headerHidden {
+    transform: translateY(-100%);
+  }
+  
+  .headerVisible {
+    transform: translateY(0);
+  }
+  
+  .logoWrapper {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    padding: 1rem; /* Equivalent to pl-4 in Tailwind */
+    z-index: 60; /* Asegurarse de que esté encima del header */
+  }
+  
+  .logo {
+    height: 8rem; /* Aumentar el tamaño del logo */
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
