@@ -59,7 +59,7 @@ const Projects = () => (
                 href={project.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#507A68] text-[#E8F5F1] px-4 py-2 rounded-md hover:bg-[#6A9284]" /* Botón DEMO con tonalidades */
+                className="bg-[#4CAF50] text-[#FFFFFF] px-6 py-3 rounded-md shadow-lg hover:bg-[#45A049] transition-colors duration-300" /* Botón DEMO con tonalidades más visibles */
               >
                 DEMO
               </a>
@@ -67,7 +67,7 @@ const Projects = () => (
                 href={project.repoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#426A5A] text-[#E8F5F1] px-4 py-2 rounded-md hover:bg-[#507A68]" /* Botón REPO con tonalidades más oscuras */
+                className="bg-[#2196F3] text-[#FFFFFF] px-6 py-3 rounded-md shadow-lg hover:bg-[#1976D2] transition-colors duration-300" /* Botón REPO con tonalidades más visibles */
               >
                 REPO
               </a>
