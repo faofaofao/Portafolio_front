@@ -32,26 +32,26 @@ const projects = [
 ];
 
 const Projects = () => (
-  <section id="projects" className="py-20 bg-[#453A30]"> {/* Fondo del componente con tonalidad de #2B2118 */}
+  <section id="projects" className="py-20 bg-[#2B3A36]"> {/* Fondo igual al componente Skills */}
     <div className="container mx-auto px-6">
-      <h2 className="text-3xl font-semibold text-center mb-12 text-[#F4EDE8]"> {/* Texto con tonalidad clara de #2B2118 */}
+      <h2 className="text-3xl font-semibold text-center mb-12 text-[#A3D9C9]"> {/* Texto con el mismo color que el título de Skills */}
         Proyectos
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#2B2118] p-6 rounded-2xl border border-[#5A483D] shadow-md flex flex-col items-center" /* Fondo oscuro, bordes y sombras más claras */
+            className="bg-[#354F45] p-6 rounded-2xl border border-[#587D6E] shadow-md flex flex-col items-center" /* Fondo más oscuro y bordes más claros */
           >
             <img
               src={project.src}
               alt={project.title}
-              className="h-60 w-full object-cover mb-4 rounded-lg border-2 border-[#7C6654]" /* Borde de la imagen */
+              className="h-60 w-full object-cover mb-4 rounded-lg border-2 border-[#5C8A76]" /* Borde de la imagen */
             />
-            <h3 className="text-xl font-bold mb-2 text-[#F4EDE8] text-center"> {/* Título del proyecto con color claro */}
+            <h3 className="text-xl font-bold mb-2 text-[#A3D9C9] text-center"> {/* Título del proyecto con color similar al de Skills */}
               {project.title}
             </h3>
-            <p className="text-[#D3C6B5] mb-4 text-center"> {/* Descripción con color más claro */}
+            <p className="text-[#C3DED9] mb-4 text-center"> {/* Descripción con un color claro que armoniza con el fondo */}
               {project.description}
             </p>
             <div className="flex justify-center gap-4 w-full">
@@ -59,7 +59,7 @@ const Projects = () => (
                 href={project.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#6E5542] text-[#F4EDE8] px-4 py-2 rounded-md hover:bg-[#7C6654]" /* Botón DEMO con tonalidades de #2B2118 */
+                className="bg-[#507A68] text-[#E8F5F1] px-4 py-2 rounded-md hover:bg-[#6A9284]" /* Botón DEMO con tonalidades */
               >
                 DEMO
               </a>
@@ -67,7 +67,7 @@ const Projects = () => (
                 href={project.repoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#4A3A31] text-[#F4EDE8] px-4 py-2 rounded-md hover:bg-[#5A483D]" /* Botón REPO con tonalidades más oscuras */
+                className="bg-[#426A5A] text-[#E8F5F1] px-4 py-2 rounded-md hover:bg-[#507A68]" /* Botón REPO con tonalidades más oscuras */
               >
                 REPO
               </a>
