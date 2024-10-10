@@ -52,7 +52,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between h-full relative z-10">
         <div className="text-center md:text-left text-[#FFFFFF] md:w-1/2">
           <h1 className="text-3xl md:text-4xl font-bold mb-6 custom-typewriter-text relative">
-            <TypewriterEffect text="Pedro Cuevas Lavin" />
+            <TypewriterEffect text="Pedro Lavin Cuevas" />
           </h1>
           <p className="text-xl mb-6">
 Desarrollador web Full-Stack con experiencia en crear demos funcionales que abarcan tanto el front-end como el back-end. Me enfoco en el diseño de interfaces y en el desarrollo de funcionalidades, siempre buscando ofrecer soluciones efectivas.
