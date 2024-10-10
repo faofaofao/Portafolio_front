@@ -65,7 +65,7 @@ Desarrollador web Full-Stack con experiencia en crear demos funcionales que abar
               Contáctame
             </a>
             <a
-              href="../../../public/CV.pdf"
+              href="/CV.pdf"
               download
               className="bg-[#00bfae] hover:bg-[#009688] text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
             >
